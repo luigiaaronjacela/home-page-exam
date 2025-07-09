@@ -1,24 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.hero-section{
+.hero-section {
   font-family: "Bitcount Grid Double", system-ui;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
-.hero-section-headings{
-  background: url('https://images4.alphacoders.com/123/123194.jpg') center/cover no-repeat;
+.hero-section-headings {
+  background: url("https://images4.alphacoders.com/123/123194.jpg")
+    center/cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 80px 20px;
   font-family: "Bitcount Grid Double", system-ui;
-  height: 500px;
-
 }
+
 .hero-section-headings .btn {
   background-color: #e75480;
   border: none;
@@ -26,7 +24,6 @@
   color: #fff;
   font-weight: bold;
   border-radius: 30px;
-  font-style: normal;
 }
 
 .hero-section-headings h1 {
@@ -41,21 +38,27 @@
   margin-bottom: 30px;
 }
 
+/* Responsive hero section */
+@media (max-width: 768px) {
+  .hero-section-headings {
+    padding: 60px 15px;
+  }
 
-.hero-section h1 {
-  font-family: "Bitcount Grid Double", system-ui;
-  font-size: 3rem;
-  font-optical-sizing: auto;
+  .hero-section-headings h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section-headings p {
+    font-size: 1rem;
+  }
+
+  .hero-section-headings .btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
 }
 
-.hero-section p {
-  font-family: "Bitcount Grid Double", system-ui;
-  font-size: 1.2rem;
-  margin: 20px 0;
-  font-optical-sizing: auto;
-}
-
-
+/* Carousel */
 #carouselExampleDark {
   background: #fff;
   padding: 40px;
@@ -64,25 +67,16 @@
   margin: 40px auto;
 }
 
-
-
-#carouselExampleInterval img {
-  object-fit: cover;
-}
-
-
-.picturecard {
-  width: 300px;
-  height: 300px;
-  background: #6c757d;
-  margin: auto;
-  object-fit: cover;
-  display: block;
-}
-
 .carousel-image {
-  width: 600px;
-  height: 600px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #carouselExampleDark {
+    padding: 20px;
+  }
 }
